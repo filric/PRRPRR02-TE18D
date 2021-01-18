@@ -8,6 +8,7 @@ namespace SOLID_Labb
     {
 
         public string _color;
+        public string _owner;
 
         public Animal(string color)
         {
@@ -19,5 +20,7 @@ namespace SOLID_Labb
         public abstract void Sleep();
 
         public abstract void Eat();
+
+        public abstract void Owner();
     }
 }

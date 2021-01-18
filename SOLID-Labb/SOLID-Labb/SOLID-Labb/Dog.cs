@@ -6,7 +6,6 @@ namespace SOLID_Labb
 {
     class Dog : Animal
     {
-        string _owner;
 
         public Dog(string color): base(color)
         {
@@ -25,12 +24,13 @@ namespace SOLID_Labb
 
         public override void Speak()
         {
-            Console.WriteLine("Dog is eating. " + _owner +" is happy!");
+            Console.WriteLine("Dog is eating.");
         }
 
-        public void TransferOwnership(string owner)
+        public override void Owner()
         {
-            _owner = owner;
+            Console.WriteLine(_owner + " is the happy owner!");
         }
+
     }
 }

@@ -25,5 +25,10 @@ namespace SOLID_Labb
         {
             Console.WriteLine("Bird is peck-peck-pecking away!");
         }
+
+        public override void Owner()
+        {
+            Console.WriteLine(_owner);
+        }
     }
 }

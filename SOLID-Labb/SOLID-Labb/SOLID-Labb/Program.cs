@@ -15,14 +15,17 @@ namespace SOLID_Labb
 
             foreach (var animal in animals)
             {
-                if (animal is Dog dog)
-                {
-                    dog.TransferOwnership("Niklas");
-                }
-
                 animal.Eat();
                 animal.Sleep();
                 animal.Speak();
+
+                if (animal is Dog dog)
+                {
+
+                    animal._owner = "Niklas";
+                    animal.Owner();
+                }
+
                 animal._color = "Grey";
                 Console.WriteLine(animal.GetType().Name + " is " + animal._color);
                 Console.WriteLine();

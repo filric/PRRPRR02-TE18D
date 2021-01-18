@@ -25,5 +25,10 @@ namespace SOLID_Labb
         {
             Console.WriteLine("Hedgehog is omnomnoming!");
         }
+
+        public override void Owner()
+        {
+            Console.WriteLine(_owner);
+        }
     }
 }
